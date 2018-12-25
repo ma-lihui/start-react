@@ -59,7 +59,7 @@ module.exports = {
           // presets: [['es2015', { modules: false }], 'stage-0', 'react'] // tree-shaking
         }
       },
-      { test: /\.(jpg|png)$/, loader: "url-loader?limit=8192" },
+      { test: /\.(jpg|png|gif|svg|ttf|woff|eot)$/, loader: "url-loader?limit=8192" },
       // 注意：如下不使用 ExtractTextPlugin 的写法，不能单独 build 出 css 文件
       // { test: /\.less$/i, loaders: ['style-loader', 'css-loader', 'less-loader'] },
       // { test: /\.css$/i, loaders: ['style-loader', 'css-loader'] },
