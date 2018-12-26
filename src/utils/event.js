@@ -38,10 +38,7 @@ export default class Event {
 
     removeListener (type, listener) {
         if (this.events[type]) {
-            this.events[type] = this.events[type].filter(ev => {
-                ev != listener
-            })
-            //抛弃掉等于listener的
+            this.events[type] = this.events[type].filter(ev => ev !== listener)
         }
     }
 
